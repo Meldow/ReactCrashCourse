@@ -12,13 +12,23 @@ class Counter extends Component {
 
         return (
             <React.Fragment>
+                /*
+                in javascript,
+                    empty string falsey -> false && 'Hi' -> false
+                    at least 1 character is truthy -> true && 'Hi' -> 'Hi'
+                 */
+                {this.state.tags.length === 0 && "Please create a new tag"}
                 <span className={classes}>{this.formatCount()}</span>
                 <button className="btn btn-secondary btn-sm">Increment</button>
-                <ul>
-                    {this.state.tags.map(tag => <li key={tag}>{tag}</li>)}
-                </ul>
+                {this.renderTags()}
             </React.Fragment>
         );
+    }
+
+    renderTags() {
+        return this.state.tags.length === 0
+            ? <p>There are no tags!</p>
+            : <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
     }
 
     getBadgeClasses() {

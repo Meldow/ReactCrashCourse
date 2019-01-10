@@ -7,22 +7,33 @@ class Counter extends Component {
         tags: ['tag1', 'tag2', 'tag3']
     };
 
+    //constructor() {
+    //    super();
+    //this binds the method 'handleIncrement' with the 'this' of the current object
+    //    this.handleIncrement = this.handleIncrement.bind(this);
+    //we can also use the arrow function on all methods
+    //}
+
+    /*
+    in javascript,
+        empty string falsey -> false && 'Hi' -> false
+        at least 1 character is truthy -> true && 'Hi' -> 'Hi'
+     */
     render() {
         let classes = this.getBadgeClasses();
 
         return (
             <React.Fragment>
-                /*
-                in javascript,
-                    empty string falsey -> false && 'Hi' -> false
-                    at least 1 character is truthy -> true && 'Hi' -> 'Hi'
-                 */
                 {this.state.tags.length === 0 && "Please create a new tag"}
                 <span className={classes}>{this.formatCount()}</span>
-                <button className="btn btn-secondary btn-sm">Increment</button>
+                <button onClick={this.handleIncrement} className="btn btn-secondary btn-sm">Increment</button>
                 {this.renderTags()}
             </React.Fragment>
         );
+    }
+
+    handleIncrement = () => {
+        console.log("click", this);
     }
 
     renderTags() {

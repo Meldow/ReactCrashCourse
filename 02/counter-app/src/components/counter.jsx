@@ -28,7 +28,7 @@ class Counter extends Component {
                 <span className={classes}>{this.formatCount()}</span>
                 <button
                     //onClick={this.handleIncrement} //no parameters
-                    onClick={() => this.handleIncrement({ id: 1})}
+                    onClick={() => this.handleIncrement({id: 1})}
                     className="btn btn-secondary btn-sm">Increment
                 </button>
                 {this.renderTags()}

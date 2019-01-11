@@ -26,14 +26,20 @@ class Counter extends Component {
             <React.Fragment>
                 {this.state.tags.length === 0 && "Please create a new tag"}
                 <span className={classes}>{this.formatCount()}</span>
-                <button onClick={this.handleIncrement} className="btn btn-secondary btn-sm">Increment</button>
+                <button
+                    //onClick={this.handleIncrement} //no parameters
+                    onClick={() => this.handleIncrement({ id: 1})}
+                    className="btn btn-secondary btn-sm">Increment
+                </button>
                 {this.renderTags()}
             </React.Fragment>
         );
     }
 
-    handleIncrement = () => {
-        console.log("click", this);
+    handleIncrement = product => {
+        console.log("click product: " + product, this);
+        // we have to explicitly tell react what as changed
+        this.setState({count: this.state.count + 1});
     }
 
     renderTags() {

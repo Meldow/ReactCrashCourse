@@ -13,10 +13,11 @@ class Counters extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 {this.state.counters.map(counter =>
-                    <Counter key={counter.id} value={counter.value}/>)}
-            </div>
+                    <Counter key={counter.id} value={counter.value} id={counter.id}>
+                    </Counter>)}
+            </React.Fragment>
         );
     }
 }

@@ -22,7 +22,8 @@ class Counter extends Component {
     render() {
         let classes = this.getBadgeClasses();
         return (
-            <React.Fragment>
+            <div>
+                <h4>Counter #{this.props.id}</h4>
                 {this.state.tags.length === 0 && "Please create a new tag"}
                 <span className={classes}>{this.formatCount()}</span>
                 <button
@@ -31,7 +32,7 @@ class Counter extends Component {
                     className="btn btn-secondary btn-sm">Increment
                 </button>
                 {this.renderTags()}
-            </React.Fragment>
+            </div>
         );
     }
 

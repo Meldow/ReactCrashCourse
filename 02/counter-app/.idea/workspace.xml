@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/components/counters.jsx" line="31" />
+    <bookmark url="file://$PROJECT_DIR$/src/components/counters.jsx" line="43" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f98f56c8-41c4-4efa-a924-6690aadeba5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/counter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/counters.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/counters.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/counters.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+            <state relative-caret-position="663">
+              <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/counter.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="340">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -76,8 +75,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/components/counters.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/counters.jsx" />
         <option value="$PROJECT_DIR$/src/components/counter.jsx" />
+        <option value="$PROJECT_DIR$/src/components/counters.jsx" />
       </list>
     </option>
   </component>
@@ -154,12 +153,12 @@
       <workItem from="1547144187290" duration="3632000" />
       <workItem from="1547194398951" duration="8449000" />
       <workItem from="1547306923294" duration="60000" />
-      <workItem from="1547480808531" duration="904000" />
+      <workItem from="1547480808531" duration="1300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13045000" />
+    <option name="totallyTimeSpent" value="13441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -203,20 +202,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/counters.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/counter.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/counter.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/counters.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="663">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

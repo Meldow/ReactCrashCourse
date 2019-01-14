@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-//https://youtu.be/Ke90Tje7VS0?t=2486
 class Counter extends Component {
     state = {
         value: this.props.value,
@@ -29,7 +28,13 @@ class Counter extends Component {
                 <button
                     //onClick={this.handleIncrement} //no parameters
                     onClick={() => this.handleIncrement({id: 1})}
-                    className="btn btn-secondary btn-sm">Increment
+                    className="btn btn-secondary btn-sm">
+                    Increment
+                </button>
+                <button
+                    onClick={() => this.props.onDelete(this.props.id)}
+                    className="btn btn-danger btn-sm m-2">
+                    Delete
                 </button>
                 {this.renderTags()}
             </div>

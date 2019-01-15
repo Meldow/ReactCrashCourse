@@ -12,20 +12,14 @@ class App extends Component {
         ]
     }
 
-    render() {
-        return (
-            <React.Fragment>
-                <Navbar totalCounters={this.state.counters.filter(c => c.value > 0).length}/>
-                <main className="container">
-                    <Counters
-                        counters={this.state.counters}
-                        onReset={this.handleReset}
-                        onIncrement={this.handleIncrement}
-                        onDelete={this.handleDelete}
-                    />
-                </main>
-            </React.Fragment>
-        );
+    constructor(props) {
+        super(props);
+        console.log('App - contructor');
+    }
+
+    componentDidMount() {
+        // ajax calls
+        console.log('App - component did mount');
     }
 
     handleIncrement = counter => {
@@ -49,6 +43,25 @@ class App extends Component {
         });
         this.setState({counters})
     };
+
+    render() {
+        console.log('App - render');
+        return (
+            <React.Fragment>
+                <Navbar totalCounters={this.state.counters.filter(c => c.value > 0).length}/>
+                <main className="container">
+                    <Counters
+                        counters={this.state.counters}
+                        onReset={this.handleReset}
+                        onIncrement={this.handleIncrement}
+                        onDelete={this.handleDelete}
+                    />
+                </main>
+            </React.Fragment>
+        );
+    }
+
+
 }
 
 export default App;

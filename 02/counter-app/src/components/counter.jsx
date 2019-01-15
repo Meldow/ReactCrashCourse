@@ -8,12 +8,23 @@ class Counter extends Component {
     //we can also use the arrow function on all methods
     //}
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('prevProps', prevProps);
+        console.log('prevState', prevState);
+        console.log('Counter - componentDidUpdate');
+    }
+
+    componentWillUnmount() {
+        console.log('Counter - Unmount');
+    }
+
     /*
     in javascript,
         empty string falsey -> false && 'Hi' -> false
         at least 1 character is truthy -> true && 'Hi' -> 'Hi'
      */
     render() {
+        console.log('Counter - render');
         let classes = this.getBadgeClasses();
         return (
             <div>
